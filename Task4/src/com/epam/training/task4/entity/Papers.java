@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Papers {
 
-	List<Paper> paperList = new ArrayList<>();
+	private List<Paper> paperList = new ArrayList<>();
 
 	public void add(Paper paper) {
 		this.paperList.add(paper);

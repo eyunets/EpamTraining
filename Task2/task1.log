@@ -1,0 +1,278 @@
+2018-08-08 15:31:36 DEBUG main root: main:27 - Start application.
+2018-08-08 15:31:36 ERROR main root: read:29 - Error while reading C:\Users\Yauhenii\git\repository\Task2\resources\text.txt
+java.io.FileNotFoundException: C:\Users\Yauhenii\git\repository\Task2\resources\text.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.epam.training.task2.service.FileHandler.read(FileHandler.java:20)
+	at com.epam.training.task2.runner.Runner.main(Runner.java:35)
+2018-08-08 15:31:36 DEBUG main root: parsing:23 - Listing parsing.
+2018-08-08 15:31:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:31:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:31:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:31:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: main:27 - Start application.
+2018-08-08 15:32:10 DEBUG main root: parsing:23 - Listing parsing.
+2018-08-08 15:32:10 DEBUG main root: parsing:22 - Paragraph parsing.
+2018-08-08 15:32:10 DEBUG main root: parsing:22 - Sentence parsing.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: parsing:22 - Sentence parsing.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: parsing:22 - Paragraph parsing.
+2018-08-08 15:32:10 DEBUG main root: parsing:22 - Sentence parsing.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: parsing:22 - Paragraph parsing.
+2018-08-08 15:32:10 DEBUG main root: parsing:22 - Sentence parsing.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:10 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:10 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: main:27 - Start application.
+2018-08-08 15:32:36 DEBUG main root: parsing:23 - Listing parsing.
+2018-08-08 15:32:36 DEBUG main root: parsing:22 - Paragraph parsing.
+2018-08-08 15:32:36 DEBUG main root: parsing:22 - Sentence parsing.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: parsing:22 - Sentence parsing.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: parsing:22 - Paragraph parsing.
+2018-08-08 15:32:36 DEBUG main root: parsing:22 - Sentence parsing.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: parsing:22 - Paragraph parsing.
+2018-08-08 15:32:36 DEBUG main root: parsing:22 - Sentence parsing.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:32:36 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:32:36 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: main:27 - Start application.
+2018-08-08 15:34:29 DEBUG main root: parsing:23 - Listing parsing.
+2018-08-08 15:34:29 DEBUG main root: parsing:22 - Paragraph parsing.
+2018-08-08 15:34:29 DEBUG main root: parsing:22 - Sentence parsing.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: parsing:22 - Sentence parsing.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: parsing:22 - Paragraph parsing.
+2018-08-08 15:34:29 DEBUG main root: parsing:22 - Sentence parsing.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: parsing:22 - Paragraph parsing.
+2018-08-08 15:34:29 DEBUG main root: parsing:22 - Sentence parsing.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: <init>:17 - Create new Leaf object
+2018-08-08 15:34:29 DEBUG main CompositeTextFragment: add:18 - Add new child.
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt
+2018-08-08 15:34:29 DEBUG main root: write:35 - Writing data to C:\Users\Yauhenii\git\repository\Task2\resources\output.txt

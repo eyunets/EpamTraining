@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsi:papers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="schema.xsd">
+	<xsi:paper>
+		<xsi:title>Magazine</xsi:title>
+		<xsi:type>magazine</xsi:type>
+		<xsi:monthly>true</xsi:monthly>
+		<xsi:chars>
+			<xsi:char>
+				<xsi:color>true</xsi:color>
+				<xsi:numberOfPage>60</xsi:numberOfPage>
+				<xsi:glossy>true</xsi:glossy>
+				<xsi:subscriptionIndex>220026</xsi:subscriptionIndex>
+			</xsi:char>
+		</xsi:chars>
+	</xsi:paper>
+	<xsi:paper>
+		<xsi:title>newspaper</xsi:title>
+		<xsi:type>newspaper</xsi:type>
+		<xsi:monthly>true</xsi:monthly>
+		<xsi:chars>
+			<xsi:char>
+				<xsi:color>false</xsi:color>
+				<xsi:numberOfPage>10</xsi:numberOfPage>
+				<xsi:glossy>false</xsi:glossy>
+				<xsi:subscriptionIndex>220000</xsi:subscriptionIndex>
+			</xsi:char>
+		</xsi:chars>
+	</xsi:paper>
+</xsi:papers>
