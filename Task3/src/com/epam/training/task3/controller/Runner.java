@@ -47,9 +47,9 @@ public class Runner {
 
 		Thread.sleep(3000);
 
-		ship1.stopThread();
+	/*	ship1.stopThread();
 		ship2.stopThread();
-		ship3.stopThread();
+		ship3.stopThread();*/
 
 	}
 

@@ -25,7 +25,7 @@ public class Port {
 			berthList.add(new Berth(i, portWarehouse));
 		}
 		usedBerths = new HashMap<Ship, Berth>();
-		LOGGER.debug("Порт создан.");
+		LOGGER.debug("Port has been created");
 	}
 
 	public boolean lockBerth(Ship ship) {

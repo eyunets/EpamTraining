@@ -2,6 +2,7 @@ package com.epam.training.task3.entity;
 
 import java.util.List;
 import java.util.Random;
+import java.util.Vector;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.apache.log4j.LogManager;
@@ -37,7 +38,7 @@ public class Ship implements Runnable {
         inPort();
       }
     } catch (InterruptedException e) {
-      LOGGER.error("С кораблем случилась неприятность и он уничтожен.", e);
+      LOGGER.error("Ship has been destroyed.", e);
     }
   }
 
@@ -53,16 +54,16 @@ public class Ship implements Runnable {
       isLockedBerth = port.lockBerth(this);
       if (isLockedBerth) {
         berth = port.getBerth(this);
-        LOGGER.debug("Корабль " + name + " пришвартовался к причалу " + berth.getId());
+        LOGGER.debug("Ship " + name + " has docked to berth" + berth.getId());
         ShipAction action = getNextAction();
         executeAction(action, berth);
       } else {
-        LOGGER.debug("Кораблю " + name + " отказано в швартовке к причалу ");
+        LOGGER.debug("Ship " + name + " has been declined ");
       }
     } finally {
       if (isLockedBerth) {
         port.unlockBerth(this);
-        LOGGER.debug("Корабль " + name + " отошел от причала " + berth.getId());
+        LOGGER.debug("ShipСЊ " + name + " has undocked from berth " + berth.getId());
       }
     }
 
@@ -85,17 +86,17 @@ public class Ship implements Runnable {
     int containersNumberToMove = random.nextInt(shipWarehouse.getCurrentSize());
     boolean result = false;
 
-    LOGGER.debug("Корабль " + name + " хочет загрузить " + containersNumberToMove
-        + " контейнеров на склад порта.");
+    LOGGER.debug("Ship " + name + " wants to unload " + containersNumberToMove
+        + " containers from port.");
 
     result = berth.add(shipWarehouse, containersNumberToMove);
 
     if (!result) {
-      LOGGER.debug("Недостаточно места на складе порта для выгрузки кораблем " + name + " "
-          + containersNumberToMove + " контейнеров.");
+      LOGGER.debug("Not enough space in port to unload ship " + name + " "
+          + containersNumberToMove + " containers.");
     } else {
       LOGGER.debug(
-          "Корабль " + name + " выгрузил " + containersNumberToMove + " контейнеров в порт.");
+          "Ship " + name + " has unloaded " + containersNumberToMove + " containers to port.");
 
     }
     return result;
@@ -108,17 +109,17 @@ public class Ship implements Runnable {
 
     boolean result = false;
 
-    LOGGER.debug("Корабль " + name + " хочет загрузить " + containersNumberToMove
-        + " контейнеров со склада порта.");
+    LOGGER.debug("Ship " + name + " wants to load " + containersNumberToMove
+        + " containers from port.");
 
     result = berth.get(shipWarehouse, containersNumberToMove);
 
     if (result) {
       LOGGER.debug(
-          "Корабль " + name + " загрузил " + containersNumberToMove + " контейнеров из порта.");
+          "Ship " + name + " loaded " + containersNumberToMove + " containers from port.");
     } else {
-      LOGGER.debug("Недостаточно места на на корабле " + name + " для погрузки "
-          + containersNumberToMove + " контейнеров из порта.");
+      LOGGER.debug("Not enough space on ship " + name + " for loading "
+          + containersNumberToMove + " containers from port.");
     }
 
     return result;
