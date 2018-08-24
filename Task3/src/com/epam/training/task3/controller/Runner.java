@@ -9,48 +9,34 @@ import com.epam.training.task3.entity.Ship;
 
 public class Runner {
 
-	public static void main(String[] args) throws InterruptedException {
+  static final int WAREHOUSE_PORT_SIZE = 15;
+  static final int NUMBER_OF_BERTHS = 2;
+  static final int PORT_WAREHEOUST_CAPACITY = 900;
 
-		int warehousePortSize = 15;
-		List<Container> containerList = new ArrayList<Container>(warehousePortSize);
-		for (int i = 0; i < warehousePortSize; i++) {
-			containerList.add(new Container(i));
-		}
+  public static void main(String[] args) throws InterruptedException {
 
-		Port port = new Port(2, 900);
-		port.setContainersToWarehouse(containerList);
+    List<Container> containerList = new ArrayList<Container>(WAREHOUSE_PORT_SIZE);
+    for (int i = 0; i < WAREHOUSE_PORT_SIZE; i++) {
+      containerList.add(new Container(i));
+    }
 
-		containerList = new ArrayList<Container>(warehousePortSize);
-		for (int i = 0; i < warehousePortSize; i++) {
-			containerList.add(new Container(i + 30));
-		}
-		Ship ship1 = new Ship("Ship1", port, 90);
-		ship1.setContainersToWarehouse(containerList);
+    Port port = Port.getInstance(NUMBER_OF_BERTHS, PORT_WAREHEOUST_CAPACITY);
+    port.setContainersToWarehouse(containerList);
 
-		containerList = new ArrayList<Container>(warehousePortSize);
-		for (int i = 0; i < warehousePortSize; i++) {
-			containerList.add(new Container(i + 60));
-		}
-		Ship ship2 = new Ship("Ship2", port, 90);
-		ship2.setContainersToWarehouse(containerList);
+    List<Ship> ships = new ArrayList<Ship>();
+    for (int i = 0; i < 10; i++) {
+      ships.add(new Ship("Ship" + i, port, 50));
+      containerList = new ArrayList<Container>(WAREHOUSE_PORT_SIZE);
+      for (int j = 0; j < WAREHOUSE_PORT_SIZE; j++) {
+        containerList.add(new Container(i));
+      }
+      ships.get(i).setContainersToWarehouse(containerList);
+    }
+    for (int i = 0; i < ships.size(); i++) {
+      new Thread(ships.get(i)).start();
+    }
 
-		containerList = new ArrayList<Container>(warehousePortSize);
-		for (int i = 0; i < warehousePortSize; i++) {
-			containerList.add(new Container(i + 60));
-		}
-		Ship ship3 = new Ship("Ship3", port, 90);
-		ship3.setContainersToWarehouse(containerList);
-
-		new Thread(ship1).start();
-		new Thread(ship2).start();
-		new Thread(ship3).start();
-
-		Thread.sleep(3000);
-
-	/*	ship1.stopThread();
-		ship2.stopThread();
-		ship3.stopThread();*/
-
-	}
+    Thread.sleep(3000);
+  }
 
 }

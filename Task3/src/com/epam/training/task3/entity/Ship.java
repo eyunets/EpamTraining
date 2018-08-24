@@ -2,8 +2,6 @@ package com.epam.training.task3.entity;
 
 import java.util.List;
 import java.util.Random;
-import java.util.Vector;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -11,7 +9,6 @@ import org.apache.log4j.Logger;
 public class Ship implements Runnable {
 
   private final static Logger LOGGER = LogManager.getRootLogger();
-  AtomicBoolean stopThread = new AtomicBoolean(false);
 
   enum ShipAction {
     LOAD_TO_PORT, LOAD_FROM_PORT
@@ -27,16 +24,10 @@ public class Ship implements Runnable {
     shipWarehouse = new Warehouse(shipWarehouseSize);
   }
 
-  public void stopThread() {
-    stopThread.set(true);
-  }
-
   public void run() {
     try {
-      while (!stopThread.get()) {
-        atSea();
-        inPort();
-      }
+      atSea();
+      inPort();
     } catch (InterruptedException e) {
       LOGGER.error("Ship has been destroyed.", e);
     }
@@ -63,10 +54,9 @@ public class Ship implements Runnable {
     } finally {
       if (isLockedBerth) {
         port.unlockBerth(this);
-        LOGGER.debug("Shipь " + name + " has undocked from berth " + berth.getId());
+        LOGGER.debug("Ship " + name + " has undocked from berth " + berth.getId());
       }
     }
-
   }
 
   private void executeAction(ShipAction action, Berth berth) throws InterruptedException {
@@ -80,20 +70,29 @@ public class Ship implements Runnable {
     }
   }
 
+  private ShipAction getNextAction() {
+    Random random = new Random();
+    int value = random.nextInt(2);
+    if (value == 0)
+      return ShipAction.LOAD_TO_PORT;
+    else
+      return ShipAction.LOAD_FROM_PORT;
+  }
+
   private boolean loadToPort(Berth berth) throws InterruptedException {
 
     Random random = new Random();
     int containersNumberToMove = random.nextInt(shipWarehouse.getCurrentSize());
     boolean result = false;
 
-    LOGGER.debug("Ship " + name + " wants to unload " + containersNumberToMove
-        + " containers from port.");
+    LOGGER.debug(
+        "Ship " + name + " wants to unload " + containersNumberToMove + " containers from port.");
 
     result = berth.add(shipWarehouse, containersNumberToMove);
 
     if (!result) {
-      LOGGER.debug("Not enough space in port to unload ship " + name + " "
-          + containersNumberToMove + " containers.");
+      LOGGER.debug("Not enough space in port to unload ship " + name + " " + containersNumberToMove
+          + " containers.");
     } else {
       LOGGER.debug(
           "Ship " + name + " has unloaded " + containersNumberToMove + " containers to port.");
@@ -106,32 +105,18 @@ public class Ship implements Runnable {
 
     Random random = new Random();
     int containersNumberToMove = random.nextInt(shipWarehouse.getFreeSize());
-
     boolean result = false;
-
-    LOGGER.debug("Ship " + name + " wants to load " + containersNumberToMove
-        + " containers from port.");
-
+    LOGGER.debug(
+        "Ship " + name + " wants to load " + containersNumberToMove + " containers from port.");
     result = berth.get(shipWarehouse, containersNumberToMove);
 
     if (result) {
-      LOGGER.debug(
-          "Ship " + name + " loaded " + containersNumberToMove + " containers from port.");
+      LOGGER.debug("Ship " + name + " loaded " + containersNumberToMove + " containers from port.");
     } else {
-      LOGGER.debug("Not enough space on ship " + name + " for loading "
-          + containersNumberToMove + " containers from port.");
+      LOGGER.debug("Not enough space on ship " + name + " for loading " + containersNumberToMove
+          + " containers from port.");
     }
-
     return result;
-  }
-
-  private ShipAction getNextAction() {
-    Random random = new Random();
-    int value = random.nextInt(2);
-    if (value == 0)
-      return ShipAction.LOAD_TO_PORT;
-    else
-      return ShipAction.LOAD_FROM_PORT;
   }
 
   public void setContainersToWarehouse(List<Container> containerList) {
