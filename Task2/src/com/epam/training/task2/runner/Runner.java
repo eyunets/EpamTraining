@@ -1,10 +1,6 @@
 package com.epam.training.task2.runner;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.file.FileAlreadyExistsException;
-import java.util.InputMismatchException;
-import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
@@ -25,8 +21,6 @@ public class Runner {
 	public static void main(String[] args) {
 
 		LOGGER.debug("Start application.");
-		Scanner input = new Scanner(System.in);
-		String filePath = "";
 
 		CompositeTextFragment text = new CompositeTextFragment();
 		Parser parser = new ListingParser();

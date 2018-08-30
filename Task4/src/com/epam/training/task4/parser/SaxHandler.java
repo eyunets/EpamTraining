@@ -4,24 +4,20 @@ import org.apache.log4j.Logger;
 import org.xml.sax.helpers.DefaultHandler;
 
 import com.epam.training.task4.entity.Paper;
+import com.epam.training.task4.entity.PaperType;
 import com.epam.training.task4.entity.Papers;
 
 import org.xml.sax.*;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.Objects;
+public class SaxHandler extends DefaultHandler {
 
-public class SaxParser extends DefaultHandler {
-
-	public static final Logger LOG = Logger.getLogger(SaxParser.class.toString());
+	public static final Logger LOG = Logger.getLogger(SaxHandler.class.toString());
 
 	private Papers papers = new Papers();
 	private Paper paper;
 	private String thisElement;
 
-	public SaxParser() {
+	public SaxHandler() {
 		paper = new Paper();
 	}
 
@@ -48,21 +44,33 @@ public class SaxParser extends DefaultHandler {
 
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException {
-		Field[] publicFields = paper.getClass().getDeclaredFields();
-		Method[] methods = paper.getClass().getMethods();
-		for (Field field : publicFields) {
-			if (field.getName() == thisElement) {
-				for (Method method : methods) {
-					String s = method.getName().toLowerCase();
-					String b = "set" + field.getName().toLowerCase();
-					if (Objects.equals(b.toLowerCase(), s.toLowerCase())) {
-						try {
-							method.invoke(paper, new String(ch, start, length));
-						} catch (IllegalAccessException | InvocationTargetException e) {
-							e.printStackTrace();
-						}
-					}
-				}
+		String str = new String(ch, start, length).trim();
+		if (str.isEmpty()) {
+			return;
+		}
+		if (thisElement != null) {
+			switch (thisElement) {
+			case "title":
+				paper.setTitle(str);
+				break;
+			case "type":
+				paper.setType(PaperType.valueOf(str.toUpperCase()));
+				break;
+			case "monthly":
+				paper.setMonthly(Boolean.parseBoolean(str));
+				break;
+			case "color":
+				paper.getChars().setColor(Boolean.parseBoolean(str));
+				break;
+			case "numberOfPage":
+				paper.getChars().setNumberOfPage(Integer.parseInt(str));
+				break;
+			case "glossy":
+				paper.getChars().setGlossy(Boolean.parseBoolean(str));
+				break;
+			case "subscriptionIndex":
+				paper.getChars().setSubscriptionIndex(str);
+				break;
 			}
 		}
 	}

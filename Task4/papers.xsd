@@ -1,26 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-targetNamespace="papers" xmlns:c="papers">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-	<xsd:complexType name="PaperType">
-		<xsd:sequence>
-			<xsd:element name="chars" type="c:CharType" />
-		</xsd:sequence>
-		<xsd:attribute name="title" type="xsd:string" />
-		<xsd:attribute name="type" type="xsd:string" />
-		<xsd:attribute name="monthly" type="xsd:boolean" />
-	</xsd:complexType>
+	<xs:element name="papers" type="papersType" />
+	<xs:element name="papersType" />
 
-	<xsd:complexType name="CharType">
-		<xsd:attribute name="color" type="xsd:boolean" />
-		<xsd:attribute name="numberOfPage" type="xsd:integer" />
-		<xsd:attribute name="glossy" type="xsd:boolean" />
-		<xsd:attribute name="subscriptionIndex" type="xsd:int" />
-	</xsd:complexType>
-	
-	
-	<xsd:element name="Paper" type="c:PaperType" />
-	<xsd:element name="Chars" type="c:CharType" />
-	<xsd:element name="Papers" />
+	<xs:complexType name="papersType">
+		<xs:sequence minOccurs="1" maxOccurs="unbounded">
+			<xs:element name="paper" type="paperType" />
+		</xs:sequence>
+	</xs:complexType>
 
-</xsd:schema>
+	<xs:complexType name="paperType">
+		<xs:sequence>
+			<xs:element name="title" type="xs:string" />
+			<xs:element name="type" type="Type" />
+			<xs:element name="monthly" type="xs:boolean" />
+			<xs:element name="chars" type="charsType" />
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:ID" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="charsType">
+		<xs:sequence>
+			<xs:element name="color" type="xs:boolean" />
+			<xs:element name="numberOfPage" type="xs:integer" />
+			<xs:element name="glossy" type="xs:boolean" />
+			<xs:element name="subscriptionIndex">
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:pattern value="[1-9][0-9]{5,10}" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="Type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="newspaper" />
+			<xs:enumeration value="magazine" />
+			<xs:enumeration value="booklet" />
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

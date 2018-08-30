@@ -2,8 +2,6 @@ package com.epam.training.task2.entity;
 
 import org.apache.log4j.Logger;
 
-import com.epam.training.task2.service.FileHandler;
-
 import java.util.List;
 import java.io.IOException;
 import java.util.ArrayList;

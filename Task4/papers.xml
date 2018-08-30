@@ -1,30 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsi:papers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<papers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="schema.xsd">
-	<xsi:paper>
-		<xsi:title>Magazine</xsi:title>
-		<xsi:type>magazine</xsi:type>
-		<xsi:monthly>true</xsi:monthly>
-		<xsi:chars>
-			<xsi:char>
-				<xsi:color>true</xsi:color>
-				<xsi:numberOfPage>60</xsi:numberOfPage>
-				<xsi:glossy>true</xsi:glossy>
-				<xsi:subscriptionIndex>220026</xsi:subscriptionIndex>
-			</xsi:char>
-		</xsi:chars>
-	</xsi:paper>
-	<xsi:paper>
-		<xsi:title>newspaper</xsi:title>
-		<xsi:type>newspaper</xsi:type>
-		<xsi:monthly>true</xsi:monthly>
-		<xsi:chars>
-			<xsi:char>
-				<xsi:color>false</xsi:color>
-				<xsi:numberOfPage>10</xsi:numberOfPage>
-				<xsi:glossy>false</xsi:glossy>
-				<xsi:subscriptionIndex>220000</xsi:subscriptionIndex>
-			</xsi:char>
-		</xsi:chars>
-	</xsi:paper>
-</xsi:papers>
+	<paper id="ID1">
+		<title>Magazine</title>
+		<type>magazine</type>
+		<monthly>true</monthly>
+		<chars>
+			<color>true</color>
+			<numberOfPage>60</numberOfPage>
+			<glossy>true</glossy>
+			<subscriptionIndex>220026</subscriptionIndex>
+		</chars>
+	</paper>
+	<paper id="ID2">
+		<title>Newspaper</title>
+		<type>newspaper</type>
+		<monthly>true</monthly>
+		<chars>
+			<color>false</color>
+			<numberOfPage>10</numberOfPage>
+			<glossy>false</glossy>
+			<subscriptionIndex>220000</subscriptionIndex>
+		</chars>
+	</paper>
+	<paper id="ID3">
+		<title>Around World</title>
+		<type>magazine</type>
+		<monthly>true</monthly>
+		<chars>
+			<color>true</color>
+			<numberOfPage>90</numberOfPage>
+			<glossy>true</glossy>
+			<subscriptionIndex>220026</subscriptionIndex>
+		</chars>
+	</paper>
+	<paper id="ID4">
+		<title>Soviet</title>
+		<type>newspaper</type>
+		<monthly>true</monthly>
+		<chars>
+			<color>false</color>
+			<numberOfPage>12</numberOfPage>
+			<glossy>false</glossy>
+			<subscriptionIndex>223400</subscriptionIndex>
+		</chars>
+	</paper>
+	<paper id="ID5">
+		<title>Discover</title>
+		<type>magazine</type>
+		<monthly>true</monthly>
+		<chars>
+			<color>true</color>
+			<numberOfPage>120</numberOfPage>
+			<glossy>true</glossy>
+			<subscriptionIndex>220326</subscriptionIndex>
+		</chars>
+	</paper>
+	<paper id="ID6">
+		<title>NY Times</title>
+		<type>newspaper</type>
+		<monthly>true</monthly>
+		<chars>
+			<color>false</color>
+			<numberOfPage>20</numberOfPage>
+			<glossy>false</glossy>
+			<subscriptionIndex>243700</subscriptionIndex>
+		</chars>
+	</paper>
+	<paper id="ID7">
+		<title>Inside</title>
+		<type>magazine</type>
+		<monthly>false</monthly>
+		<chars>
+			<color>true</color>
+			<numberOfPage>40</numberOfPage>
+			<glossy>true</glossy>
+			<subscriptionIndex>220026</subscriptionIndex>
+		</chars>
+	</paper>
+	<paper id="ID8">
+		<title>Independent</title>
+		<type>newspaper</type>
+		<monthly>true</monthly>
+		<chars>
+			<color>false</color>
+			<numberOfPage>10</numberOfPage>
+			<glossy>false</glossy>
+			<subscriptionIndex>220090</subscriptionIndex>
+		</chars>
+	</paper>
+	<paper id="ID9">
+		<title>Booklet</title>
+		<type>booklet</type>
+		<monthly>false</monthly>
+		<chars>
+			<color>false</color>
+			<numberOfPage>10</numberOfPage>
+			<glossy>false</glossy>
+			<subscriptionIndex>222026</subscriptionIndex>
+		</chars>
+	</paper>
+</papers>

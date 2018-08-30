@@ -13,13 +13,19 @@ import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 
 import com.epam.training.task4.parser.DomParser;
-import com.epam.training.task4.parser.SaxParser;
+import com.epam.training.task4.parser.SaxHandler;
+import com.epam.training.task4.parser.SchemaValidator;
 
 public class Runner {
 
 	public static final Logger LOG = Logger.getLogger(Runner.class.toString());
 
 	public static void main(String args[]) throws Exception {
+		//VALIDATOR
+		String filePath = "papers.xml";
+        String schemaPath = "papers.xsd";
+        SchemaValidator.validate(filePath, schemaPath);
+		
 		File file = new File("papers.xml");
 		// SAX
 		SAXParserFactory factory = SAXParserFactory.newInstance();
@@ -29,7 +35,7 @@ public class Runner {
 		} catch (ParserConfigurationException e) {
 			e.printStackTrace();
 		}
-		SaxParser saxp = new SaxParser();
+		SaxHandler saxp = new SaxHandler();
 		try {
 			parser.parse(file, saxp);
 		} catch (IOException e) {

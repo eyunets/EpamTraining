@@ -5,6 +5,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import com.epam.training.task4.entity.Paper;
+import com.epam.training.task4.entity.PaperType;
 import com.epam.training.task4.entity.Papers;
 
 public class DomParser {
@@ -31,22 +32,22 @@ public class DomParser {
 				paper.setTitle(getElementContent(node));
 				break;
 			case "type":
-				paper.setType(getElementContent(node));
+				paper.setType((PaperType.valueOf(getElementContent(node).toUpperCase())));
 				break;
 			case "monthly":
-				paper.setMonthly(getElementContent(node));
+				paper.setMonthly(Boolean.parseBoolean(getElementContent(node)));
 				break;
 			case "color":
-				paper.setColor(getElementContent(node));
+				paper.getChars().setColor(Boolean.parseBoolean(getElementContent(node)));
 				break;
 			case "numberOfPage":
-				paper.setNumberOfPage(getElementContent(node));
+				paper.getChars().setNumberOfPage(Integer.parseInt(getElementContent(node)));
 				break;
 			case "glossy":
-				paper.setGlossy(getElementContent(node));
+				paper.getChars().setGlossy(Boolean.parseBoolean(getElementContent(node)));
 				break;
 			case "subscriptionIndex":
-				paper.setSubscriptionIndex(getElementContent(node));
+				paper.getChars().setSubscriptionIndex(getElementContent(node));
 				break;
 			}
 		}
