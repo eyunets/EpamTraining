@@ -36,9 +36,6 @@ public class SaxHandler extends DefaultHandler {
 
 	@Override
 	public void endElement(String namespaceURI, String localName, String qName) throws SAXException {
-		if (thisElement == "paper") {
-			papers.add(paper);
-		}
 		thisElement = null;
 	}
 
